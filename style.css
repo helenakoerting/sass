@@ -1,0 +1,58 @@
+body {
+  height: 100vh; }
+
+.base, .light, .dark, .lighter, .darker {
+  flex-direction: column;
+  background: #669999;
+  width: 300px;
+  height: 300px;
+  font-family: "Smaragd LT std"; }
+
+body, .base, .light, .dark, .lighter, .darker {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+.base, .light, .dark, .lighter, .darker {
+  box-shadow: 10px 10px 20px grey;
+  border: white 2px dashed; }
+
+/*
+@include add(50)
+scale(1,5)
+**/
+.lighter {
+  width: 270px;
+  height: 270px;
+  background: #e0ebeb; }
+  .lighter:after {
+    content: "color#e0ebeb"; }
+
+.light {
+  width: 330px;
+  height: 330px;
+  background: #a3c2c2; }
+  .light:after {
+    content: "color#a3c2c2"; }
+
+.base {
+  width: 400px;
+  height: 400px; }
+  .base:after {
+    content: "color#669999"; }
+
+.dark {
+  width: 330px;
+  height: 330px;
+  background: #3d5c5c; }
+  .dark:after {
+    content: "color#3d5c5c"; }
+
+.darker {
+  width: 270px;
+  height: 270px;
+  background: #141f1f; }
+  .darker:after {
+    content: "color#141f1f"; }
+
+/*# sourceMappingURL=style.css.map */
